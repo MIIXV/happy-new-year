@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>新年快乐！</title>
+    <!-- 添加 Google Fonts 引用 -->
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: #1a1a1a;
+        }
+        canvas {
+            display: block;
+        }
+        .message {
+            position: fixed;
+            transform: translate(-50%, -50%);
+            color: #fff;  /* 改为白色 */
+            font-size: 1.5em;  /* 字体大小 */
+            opacity: 0;
+            transition: opacity 1s;
+            text-align: center;
+            font-family: "Ma Shan Zheng", "Zhi Mang Xing", "Microsoft YaHei", sans-serif;  /* 添加手写字体 */
+            text-shadow: 0 0 10px rgba(255,192,203,0.5);  /* 更改阴影颜色为粉色 */
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div id="message" class="message"></div>
+    <script src="fireworks.js"></script>
+</body>
+</html>
